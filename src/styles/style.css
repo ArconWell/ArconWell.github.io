@@ -28,7 +28,7 @@ div.scrollup {
     /* фиксированная позиция */
     color: #fff;
     /* цвет текста */
-    background-color: #286090;
+    background-color: #6d5e42;
     /* цвет заднего фона */
     right: 20px;
     /* расстояние от правого края */
@@ -53,6 +53,10 @@ div.scrollup {
 div.scrollup:hover {
     background-color: #000;
     /* цвет заднего фона при наведении */
+}
+
+.blue-color{
+    color: #314e5d;
 }
 
 /* 
