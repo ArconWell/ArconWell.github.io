@@ -59,7 +59,7 @@ div.scrollup:hover {
     color: #314e5d;
 }
 
-.play-now-button {
+.big-button {
     /* Эти два свойства отвечают за наложение кнопки на картинку  */
     position: relative;
     bottom: 7%;
@@ -78,13 +78,18 @@ div.scrollup:hover {
     font-size: 130%;
 }
 
-.play-now-button:hover {
+.big-button:hover {
     background-color: #49758b;
 }
 
 /* Убирает "выделение" кнопки при ее нажатии */
-.play-now-button:focus {
+.big-button:focus {
     outline: none;
+}
+
+.music-album{
+    background-color: #fefbf1;
+    /* height: 100%; */
 }
 
 /*Для планшетов и смартфонов*/
