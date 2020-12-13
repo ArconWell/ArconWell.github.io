@@ -59,6 +59,34 @@ div.scrollup:hover {
     color: #314e5d;
 }
 
+.play-now-button {
+    /* Эти два свойства отвечают за наложение кнопки на картинку  */
+    position: relative;
+    bottom: 7%;
+
+    display: block;
+    margin: auto;
+    background-color: #314e5d;
+    color: white;
+    padding: 5% 18%;
+    border: 0;
+
+    /* Для анимации при наведении */
+    transition: all 500ms ease;
+
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 130%;
+}
+
+.play-now-button:hover {
+    background-color: #49758b;
+}
+
+/* Убирает "выделение" кнопки при ее нажатии */
+.play-now-button:focus {
+    outline: none;
+}
+
 /*Для планшетов и смартфонов*/
 /* @include media-breakpoint-up()*/
 @media only screen and (max-device-width: 991px) {
@@ -71,6 +99,4 @@ div.scrollup:hover {
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
-@media only screen and (max-device-width: 320px) {
-
-}
+@media only screen and (max-device-width: 320px) {}
