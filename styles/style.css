@@ -108,6 +108,14 @@ div.scrollup:hover {
         background-color: #6d5e42;
         /* цвет заднего фона при наведении (нажатии) на телефоне*/
     }
+
+    .big-button:hover{
+        background-color: #314e5d;
+    }
+
+    .big-button:active{
+        background-color: #49758b;
+    }
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
