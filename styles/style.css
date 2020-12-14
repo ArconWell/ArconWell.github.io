@@ -48,6 +48,8 @@ div.scrollup {
     /* не отображать элемент */
     text-align: center;
     /*выравнивание содержимого элемента по центру */
+    z-index: 1070;
+    /*чтобы кнопка была "выше" всех остальных элементов по оси z */
 }
 
 div.scrollup:hover {
@@ -100,6 +102,11 @@ div.scrollup:hover {
     .parallax {
         background-attachment: scroll;
         background-position: 0%;
+    }
+
+    div.scrollup:hover {
+        background-color: #6d5e42;
+        /* цвет заднего фона при наведении (нажатии) на телефоне*/
     }
 }
 
