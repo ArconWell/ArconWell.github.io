@@ -57,10 +57,6 @@ div.scrollup:hover {
     /* цвет заднего фона при наведении */
 }
 
-.blue-color {
-    color: #314e5d;
-}
-
 .big-button {
     /* Эти два свойства отвечают за наложение кнопки на картинку  */
     position: relative;
@@ -89,7 +85,7 @@ div.scrollup:hover {
     outline: none;
 }
 
-.music-album{
+.music-album {
     background-color: #fefbf1;
     /* height: 100%; */
 }
@@ -109,14 +105,19 @@ div.scrollup:hover {
         /* цвет заднего фона при наведении (нажатии) на телефоне*/
     }
 
-    .big-button:hover{
+    .big-button:hover {
         background-color: #314e5d;
     }
 
-    .big-button:active{
+    .big-button:active {
         background-color: #49758b;
     }
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
-@media only screen and (max-device-width: 320px) {}
+@media only screen and (max-device-width: 320px) {
+    .blue-color {
+        /* color: #314e5d; */
+        color: red;
+    }
+}
