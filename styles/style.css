@@ -116,8 +116,4 @@ div.scrollup:hover {
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
 @media only screen and (max-device-width: 320px) {
-    .blue-color {
-        /* color: #314e5d; */
-        color: red;
-    }
 }
