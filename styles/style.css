@@ -7,6 +7,7 @@ img {
 body,
 html {
     height: 100%;
+    background-color: #fefbf1;
 }
 
 /* Создание эффекта параллакса при прокрутке */
@@ -88,7 +89,91 @@ div.scrollup:hover {
 
 .music-album {
     background-color: #fefbf1;
-    /* height: 100%; */
+    color: #6d5e42;
+}
+
+.album-wrapper {
+    background-color: white;
+    padding: 2% 5%;
+}
+
+.album-artist {
+    font-family: 'Lora', serif;
+}
+
+.music-panel {
+    background-color: transparent;
+    position: relative;
+    right: 90%;
+    /* max-width: 100%; */
+}
+
+.music-capture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tracks-wrapper {
+    overflow-y: auto;
+}
+
+/*Воспроизведение треков */
+
+#main-page-player-wrapper .track {
+    cursor: pointer;
+}
+
+#main-page-player-wrapper .mini_controls path {
+    fill: #6d5e42;
+}
+
+#main-page-player-wrapper .track .mini_controls {
+    float: left;
+    margin-right: 5%;
+}
+
+#main-page-player-wrapper .active .play {
+    display: none;
+}
+
+#main-page-player-wrapper .play {
+    display: none;
+}
+
+#main-page-player-wrapper .track:hover .play {
+    display: block;
+}
+
+#main-page-player-wrapper:hover .active .play {
+    display: none;
+}
+
+#main-page-player-wrapper .pause {
+    display: none;
+}
+
+#main-page-player-wrapper .active .pause {
+    display: block;
+}
+
+#main-page-player-wrapper .song-number {
+    display: block;
+}
+
+#main-page-player-wrapper .active .song-number {
+    display: none;
+}
+
+#main-page-player-wrapper .track:hover .song-number {
+    display: none;
+}
+
+/* Конец Воспроизведение треков */
+
+.big-button-02 {
+    margin: 0 auto;
+    bottom: 3%;
 }
 
 /*Для планшетов и смартфонов*/
@@ -113,8 +198,20 @@ div.scrollup:hover {
     .big-button:active {
         background-color: #49758b;
     }
+
+    .music-album-inner {
+        display: flex;
+        flex-direction: column;
+        /* max-height: 100%; */
+        background-color: #fefbf1;
+
+    }
+
+    .music-panel {
+        top: 50%;
+        right: 100%;
+    }
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
-@media only screen and (max-device-width: 320px) {
-}
+@media only screen and (max-device-width: 320px) {}

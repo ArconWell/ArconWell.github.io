@@ -16,6 +16,7 @@
     <!-- Подключение Google Fonts  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,8 +28,8 @@
             <!-- loading="lazy" написан для того, чтобы изображение загружалось только тогда, когда пользователь доскролит до него, а
             не с самого начла, замедляя загрузку страницы -->
             <!-- svgView и функции далее служат для обрезкт svg-изображения -->
-            <img src="images/brand-logo.svg#svgView(viewBox(13.17, 5.7, 101, 104.4)))" height="60rem" alt=""
-                class="" loading="lazy">
+            <img src="images/brand-logo.svg#svgView(viewBox(13.17, 5.7, 101, 104.4)))" height="60rem" alt="" class=""
+                loading="lazy">
             <span id="nav-brand">Kody Hanson</span>
         </a>
         <!-- Скрывающаяся кнопка меню (для мобильных версий) -->
@@ -57,8 +58,10 @@
     <!-- Контейнер с анонсом новым альбомом -->
     <div class="container-fluid parallax parallax-01 pb-5">
         <div class="row">
-            <!-- Это означает то, что до размера экрана xl будет разбиваться на 12/4=3 колонки, а до md будет 12/6=2 колонки -->
-            <div class="col-xl-4 offset-xl-6 col-md-6 offset-md-3 col-12">
+            <!-- Это означает то, что начиная с размера экрана lg и выше будет разбиваться на 12/4=3 колонки,c md и выше 
+                будет 12/6=2 колонки, c самого маленького и выше - 12/12=1. Соответствненно, например, lg перекрывает настройки md 
+            для экранов lg и xl -->
+            <div class="col-lg-4 offset-lg-6 col-md-6 offset-md-3 col-12">
                 <h1 class="text-center display-3" id="new-album-capture">NEW ALBUM OUT NOW</h1>
                 <img src="images/album-01-logo.jpg" alt="" class="" loading="lazy">
                 <button class="big-button">PLAY NOW</button>
@@ -68,9 +71,173 @@
     <!-- Контейнер с самим новым альбомом -->
     <div class="container-fluid music-album">
         <div class="row">
-            <div class="col-xl-6 offset-xl-2 col-md-12">
+            <div class="col-lg-6 offset-lg-2 col-12 d-flex flex-row music-album-inner">
                 <img src="images/personal-photo-01.jpeg" class="mt-5 mb-5" alt="" loading="lazy">
-                
+                <div class="col-lg-10 offset-lg-7 col-12 music-panel d-flex flex-column justify-content-center"
+                    id="main-page-player-wrapper">
+                    <div class="album-wrapper">
+                        <div class="text-center d-flex flex-column album-artist">
+                            <span>Kody Hanson</span>
+                            <span>MISTY MOUNTAIN ROAD</span>
+                        </div>
+                        <div class="tracks-wrapper">
+                            <audio id="main-page-player"></audio>
+                            <hr>
+                            <!-- Трек -->
+                            <div class="track" data-src="music/Alan Jackson - Country Boy.mp3">
+                                <div class="mini_controls">
+                                    <div class="play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.357"
+                                            viewBox="0 0 14 19">
+                                            <path class="" d="M1575,629.5l-14,9.5V620Z"
+                                                transform="translate(-1561 -620)">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="pause">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19">
+                                            <path d="M264,700h4v19h-4V700Zm11,0h4v19h-4V700Z"
+                                                transform="translate(-264 -700)">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="song-number music-capture">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="music-capture">
+                                    <span>COUNTRY BOY</span>
+                                    <span>04:07</span>
+                                </div>
+                            </div>
+                            <!-- Трек -->
+                            <hr>
+                            <div class="track" data-src="music/Blues Saraceno - The River.mp3">
+                                <div class="mini_controls">
+                                    <div class="play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.357"
+                                            viewBox="0 0 14 19">
+                                            <path class="" d="M1575,629.5l-14,9.5V620Z"
+                                                transform="translate(-1561 -620)">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="pause">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19">
+                                            <path d="M264,700h4v19h-4V700Zm11,0h4v19h-4V700Z"
+                                                transform="translate(-264 -700)">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="song-number music-capture">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="music-capture">
+                                    <span>BLUES SARACENO</span>
+                                    <span>03:35</span>
+                                </div>
+                            </div>
+                            <!-- Трек -->
+                            <hr>
+                            <div class="track"
+                                data-src="music/John Denver - Take Me Home, Country Roads (Original Version (Rem.mp3">
+                                <div class="mini_controls">
+                                    <div class="play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.357"
+                                            viewBox="0 0 14 19">
+                                            <path class="" d="M1575,629.5l-14,9.5V620Z"
+                                                transform="translate(-1561 -620)">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="pause">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19">
+                                            <path d="M264,700h4v19h-4V700Zm11,0h4v19h-4V700Z"
+                                                transform="translate(-264 -700)">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="song-number music-capture">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="music-capture">
+                                    <span>TAKE ME HOME, COUNTRY ROADS</span>
+                                    <span>03:10</span>
+                                </div>
+                            </div>
+                            <!-- Трек -->
+                            <hr>
+                            <div class="track" data-src="music/Johnny Cash - Hurt.mp3">
+                                <div class="mini_controls">
+                                    <div class="play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.357"
+                                            viewBox="0 0 14 19">
+                                            <path class="" d="M1575,629.5l-14,9.5V620Z"
+                                                transform="translate(-1561 -620)">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="pause">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19">
+                                            <path d="M264,700h4v19h-4V700Zm11,0h4v19h-4V700Z"
+                                                transform="translate(-264 -700)">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="song-number music-capture">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="music-capture">
+                                    <span>HURT</span>
+                                    <span>03:36</span>
+                                </div>
+                            </div>
+                            <!-- Трек -->
+                            <hr>
+                            <div class="track" data-src="music/The Dead South - In Hell I'll Be in Good Company.mp3">
+                                <div class="mini_controls">
+                                    <div class="play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.357"
+                                            viewBox="0 0 14 19">
+                                            <path class="" d="M1575,629.5l-14,9.5V620Z"
+                                                transform="translate(-1561 -620)">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+                                    <div class="pause">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="19"
+                                            viewBox="0 0 15 19">
+                                            <path d="M264,700h4v19h-4V700Zm11,0h4v19h-4V700Z"
+                                                transform="translate(-264 -700)">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="song-number music-capture">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="music-capture">
+                                    <span>IN HELL I'LL BE IN GOOD COMPANY</span>
+                                    <span>04:03</span>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <button class="big-button big-button-02">MORE MUSIC</button>
+                </div>
             </div>
         </div>
     </div>
@@ -84,6 +251,7 @@
     <script src="scripts/go-up-button.js"></script>
     <script src="scripts/extra-small-devides-behavior.js"></script>
     <script src="scripts/extra-large-devices-behavior.js"></script>
+    <script src="scripts/music-player.js"></script>
 </body>
 
 </html>
