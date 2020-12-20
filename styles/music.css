@@ -1,0 +1,66 @@
+.album-wrapper {
+    background-color: transparent;
+    padding: 2% 5%;
+}
+
+.music-panel {
+    right: 0%;
+    bottom: 0%;
+}
+
+.album-image {
+    width: 61%;
+}
+
+/*Воспроизведение треков */
+
+#main-page-player-wrapper-02 .track {
+    cursor: pointer;
+}
+
+#main-page-player-wrapper-02 .mini_controls path {
+    fill: #6d5e42;
+}
+
+#main-page-player-wrapper-02 .track .mini_controls {
+    float: left;
+    margin-right: 5%;
+}
+
+#main-page-player-wrapper-02 .active .play {
+    display: none;
+}
+
+#main-page-player-wrapper-02 .play {
+    display: none;
+}
+
+#main-page-player-wrapper-02 .track:hover .play {
+    display: block;
+}
+
+#main-page-player-wrapper-02:hover .active .play {
+    display: none;
+}
+
+#main-page-player-wrapper-02 .pause {
+    display: none;
+}
+
+#main-page-player-wrapper-02 .active .pause {
+    display: block;
+}
+
+#main-page-player-wrapper-02 .song-number {
+    display: block;
+}
+
+#main-page-player-wrapper-02 .active .song-number {
+    display: none;
+}
+
+#main-page-player-wrapper-02 .track:hover .song-number {
+    display: none;
+}
+
+/* Конец Воспроизведение треков */
