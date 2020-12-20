@@ -24,6 +24,10 @@ html {
     background-image: url('../images/background-image.jpeg');
 }
 
+.parallax-02{
+    background-image: url('../images/road-background.jpg');
+}
+
 /* Стили для кнопки прокрутки к началу страницы */
 div.scrollup {
     position: fixed;
@@ -105,7 +109,6 @@ div.scrollup:hover {
     background-color: transparent;
     position: relative;
     right: 90%;
-    /* max-width: 100%; */
 }
 
 .music-capture {
@@ -177,6 +180,10 @@ div.scrollup:hover {
     padding: 5% 14%;
 }
 
+.biography{
+    
+}
+
 /*Для планшетов и смартфонов*/
 /* @include media-breakpoint-up()*/
 @media only screen and (max-device-width: 991px) {
@@ -201,16 +208,12 @@ div.scrollup:hover {
     }
 
     .music-album-inner {
-        display: flex;
-        flex-direction: column;
-        /* max-height: 100%; */
         background-color: #fefbf1;
-
     }
 
     .music-panel {
-        top: 50%;
-        right: 100%;
+        right: 0%;
+        bottom: 12%;
     }
 }
 
