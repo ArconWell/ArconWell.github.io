@@ -1,0 +1,17 @@
+.tour-wrapper {
+    background-color: #fefbf1;
+    height: 100%;
+}
+
+.tour-capture {
+    color: #6d5e42;
+    font-family: 'Lora',
+        serif;
+}
+
+.tour{
+    padding: 2%;
+    margin-bottom: 1%;
+    color: #314e5d;
+    font-family: 'Lora', serif;
+}
