@@ -1,0 +1,45 @@
+
+.biography-wrapper {
+    background-color: #fefbf1;
+    height: 100%;
+}
+
+.bio-panel{
+    right: 90%;
+}
+.full-biography {
+    position: relative;
+    /* top: 100%; */
+}
+
+.full-biography-text-wrapper{
+    /* right: 15%; */
+}
+
+.full-biography-text {
+    background-color: white;
+    color: #314e5d;
+    font-size: large;
+}
+
+.big-button-04 {
+    margin: 0 auto;
+    top: 5%;
+}
+
+/*Для планшетов и смартфонов*/
+@media only screen and (max-width: 991px) {
+    .full-biography-text-wrapper {
+        right: 0%;
+        bottom: 20%;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .bio-panel {
+        margin:auto;
+        left: 1%;
+        bottom: 12%;
+    }
+}
