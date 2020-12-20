@@ -1,6 +1,5 @@
 /*Чтобы изображения никогда не были шире, чем их контейнеры и никогда не превысили своих истинных размеров на больших экранах*/
 img {
-    /* width: 100%; */
     max-width: 100%;
 }
 
@@ -12,8 +11,6 @@ html {
 
 /* Создание эффекта параллакса при прокрутке */
 .parallax {
-    /* height: 100%; */
-    /* min-height: 100%; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,12 +178,13 @@ div.scrollup:hover {
 }
 
 .biography{
-    
+    color: #6d5e42;
+    font-family: 'Lora', serif;
 }
 
 /*Для планшетов и смартфонов*/
 /* @include media-breakpoint-up()*/
-@media only screen and (max-device-width: 991px) {
+@media only screen and (max-width: 991px) {
 
     /* Выключение параллакса для планшетов и смартфонов */
     .parallax {
@@ -218,4 +216,4 @@ div.scrollup:hover {
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
-@media only screen and (max-device-width: 320px) {}
+@media only screen and (max-width: 320px) {}
