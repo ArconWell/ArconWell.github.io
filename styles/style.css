@@ -234,7 +234,15 @@ div.scrollup:hover {
         padding-right: 14%;
         margin-top: 20%;
     }
+
+    .biography-text {
+        font-size: 150%;
+    }
 }
 
 /* Для ультра маленьких утройств (iPhone 5/5S/SE, например)*/
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .biography-text {
+        font-size: 120%;
+    }
+}
