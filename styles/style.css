@@ -21,8 +21,8 @@ html {
     background-image: url('../images/background-image.jpeg');
 }
 
-.parallax-02{
-    background-image: url('../images/road-background.jpg');
+.parallax-02 {
+    background-image: url('../images/background-02.jpg');
 }
 
 /* Стили для кнопки прокрутки к началу страницы */
@@ -63,7 +63,7 @@ div.scrollup:hover {
 .big-button {
     /* Эти два свойства отвечают за наложение кнопки на картинку  */
     position: relative;
-    bottom: 7%;
+    bottom: 6%;
 
     display: block;
     margin: auto;
@@ -173,13 +173,28 @@ div.scrollup:hover {
 
 .big-button-02 {
     margin: 0 auto;
-    bottom: 3%;
+    bottom: 6%;
     padding: 5% 14%;
 }
 
-.biography{
+.biography-capture {
     color: #6d5e42;
     font-family: 'Lora', serif;
+}
+
+.biography-text {
+    color: #314e5d;
+    font-weight: bold;
+    font-size: 175%;
+
+    border-radius: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: rgba(254, 251, 241, 0.8);
+}
+
+.big-button-03 {
+    margin-top: 10%;
 }
 
 /*Для планшетов и смартфонов*/
@@ -212,6 +227,12 @@ div.scrollup:hover {
     .music-panel {
         right: 0%;
         bottom: 12%;
+    }
+
+    .big-button-03 {
+        padding-left: 14%;
+        padding-right: 14%;
+        margin-top: 20%;
     }
 }
 
