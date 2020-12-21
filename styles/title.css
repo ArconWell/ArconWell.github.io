@@ -5,7 +5,7 @@
 }
 
 .title-page__header {
-    height: 40vh;
+    height: 40%;
 }
 
 .title-page__ministry {}
@@ -17,13 +17,13 @@
 .title-page__cathedra {}
 
 .title-page__body {
-    height: 50vh;
+    height: 50%;
 }
 
 .title-page__laboratory-work {}
 
 .title-page-laboratory-work {
-    height: 20vh;
+    height: 20%;
 }
 
 .title-page-laboratory-work__number {}
@@ -45,7 +45,7 @@
 .title-page__performed-by>span {}
 
 .title-page__footer {
-    height: 10vh;
+    height: 10%;
 }
 
 .title-page__year {}
