@@ -1,0 +1,77 @@
+.title-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-page__header {
+    height: 40vh;
+}
+
+.title-page__ministry {}
+
+.title-page__university-cathegory {}
+
+.title-page__university-name {}
+
+.title-page__cathedra {}
+
+.title-page__body {
+    height: 50vh;
+}
+
+.title-page__laboratory-work {}
+
+.title-page-laboratory-work {
+    height: 20vh;
+}
+
+.title-page-laboratory-work__number {}
+
+.title-page-laboratory-work__name {}
+
+.title-page__performed-by {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-page__checked-by {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-page__performed-by>span {}
+
+.title-page__footer {
+    height: 10vh;
+}
+
+.title-page__year {}
+
+.title-page__line {}
+
+/*labs*/
+.labs-list {
+    font-size: 40px;
+    text-decoration: none;
+    white-space: pre-line;
+
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+}
+
+/* lab 1-2 */
+/* .labs-list__lab1-2 {
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+} */
