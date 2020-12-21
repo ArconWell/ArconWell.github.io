@@ -1,0 +1,9 @@
+.video-wrapper{
+        background-color: #fefbf1;
+        height: 100%;
+}
+
+.video-capture{
+    font-size: 200%;
+    font-weight: bold;
+}
